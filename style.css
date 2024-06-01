@@ -1,0 +1,256 @@
+/* Font ekleme */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* font-family: "Open Sans", sans-serif; */
+
+/* Renk Tanımlama */
+:root {
+  --color-primary: #006241;
+  --color-secondary: #d50032;
+  --color-extra: #d4e9e2;
+}
+
+/* Resetleme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ortak Yapılar */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+a {
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+img {
+  max-width: 100%;
+}
+/* Header Alanı */
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar li {
+  font-weight: bold;
+  margin: 0 15px;
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: var(--color-primary);
+}
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  /* img'e max-width:100% verdiğimiz için, burada 
+  bundan dolayı bir kapsayıcı çerçeve çizmek durumunda kaldık. */
+}
+.navbar-nav-left {
+  text-transform: uppercase;
+  margin-left: 20px;
+  flex: 1;
+}
+.navbar-nav-right li:first-child a {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav-right img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.navbar-nav-right li:nth-child(2) {
+  margin: 0 5px;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px solid #000;
+  padding: 7px 16px;
+  border-radius: 50px;
+  line-height: 1.2;
+  text-align: center;
+  /* text-decoration: none; */
+  transition: background-color 0.3s;
+}
+.btn-light-outline {
+  border-color: #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-dark-outline {
+  border-color: #000;
+  color: #000;
+  text-decoration: none;
+}
+.btn-light-outline:hover,
+.btn-dark-outline:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+}
+.btn-dark:hover {
+  background-color: #333;
+}
+/* Box Alanı */
+.box {
+  margin-bottom: 30px;
+}
+.box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.box-text {
+  text-align: center;
+  max-width: 500px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.box-f .box-text {
+  max-width: 600px;
+}
+.text-center {
+  text-align: center;
+}
+.text-xl {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+.text-md {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.text-sm {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+.bg-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+.bg-extra {
+  background-color: var(--color-extra);
+}
+
+.py-md {
+  padding: 20px 0;
+}
+.py-lg {
+  padding: 40px 0;
+}
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.grid-reversed :first-child {
+  order: 2;
+  /* Bu sayede grid yapısındaki elemanı tersine çevirdik */
+}
+.divider {
+  width: 95%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 40px auto;
+}
+/* Footer */
+.footer {
+  text-align: center;
+}
+.footer-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 30px;
+  align-items: center;
+}
+.social {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.social img {
+  width: 35px;
+  height: 35px;
+}
+.social a {
+  margin-right: 20px;
+}
+.created-by {
+  background: linear-gradient(to right, green, black);
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.created-by span {
+  color: red;
+  margin-left: 10px;
+}
+/* Responsive */
+@media (max-width: 1000px) {
+  .navbar-nav-left a {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .text-xl {
+    font-size: 30px;
+  }
+  .text-md {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .text-xl {
+    font-size: 25px;
+  }
+  .text-md {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-nav-right li:first-child a {
+    display: none;
+  }
+}
