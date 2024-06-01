@@ -1,6 +1,3 @@
-# starbucks-clone-proje
-
-
 # Proje Özellikleri
 
 <ul>
@@ -27,5 +24,6 @@ https://starbucks-clone.netlify.app/
 
 
 # Proje Ekran Görünüsü
+![starbucks](https://github.com/mehmet-adgzl22/starbucks-clone-proje/assets/169144147/a66525f1-c90f-4ad8-92cb-ea9d84cfc439)
 
-![Ekran görüntüsü](https://github.com/mehmet-adgzl22/starbucks-clone-proje/assets/169144147/6cd44356-497d-448d-b16b-b712553e33d9)
+
