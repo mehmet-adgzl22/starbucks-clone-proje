@@ -1,12 +1,5 @@
 # Proje Özellikleri
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
- 
-</ul>
+Bu projemizde html ve css kullanılarak bir içecek markasının web sitesi hazırlanmıştır.
 
 # Projede Kullanılan Diller ve Araçlar
 
