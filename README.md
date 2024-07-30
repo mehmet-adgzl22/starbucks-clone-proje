@@ -12,7 +12,7 @@ Bu projemizde html ve css kullanılarak bir içecek markasının web sitesi haz�
 </ul>
 
 # Proje Bağlantı Linki
-https://starbucks-clone.netlify.app/
+https://starbucks-clone-hs11.netlify.app/
 
 
 
